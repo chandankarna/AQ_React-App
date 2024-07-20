@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Are you offline?</title>
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(-45deg, #183850, #192C46, #22254C);
+            font-family: Arial, sans-serif;
+        }
+
+        .wrapper {
+            margin-left: 10px;
+            margin-right: 10px;
+            text-align: center;
+            max-width: 600px;
+            color: white;
+            padding: 30px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        h1 {
+            font-weight: bold;
+            font-size: 32px;
+            text-shadow: 0 0 3px white;
+            margin-bottom: 10px;
+        }
+
+        h4 {
+            font-weight: 300;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .lists {
+            list-style-type: disc;
+            padding-left: 0;
+            text-align: left;
+            margin-bottom: 20px;
+        }
+
+        .list {
+            margin-bottom: 10px;
+        }
+
+        a.try {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 30px;
+            background: #269ed6;
+            color: white;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-decoration: none;
+            border-radius: 4px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        a.try:hover {
+            background: #207ebb;
+        }
+
+        a.status {
+            text-decoration: none;
+            color: #207ebb;
+        }
+
+        a.status:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1>Oops! We Couldn't Load</h1>
+        <h4>
+            We apologize for the inconvenience. Please check
+            <a class="status" href="https://algoquantfintech.com/">https://algoquantfintech.com/</a>
+            to see if there's an issue on our end.
+        </h4>
+        <h1>Troubleshooting Tips</h1>
+        <ul class="lists">
+            <li class="list">Ensure your browser (Chrome/Firefox) is up-to-date.</li>
+            <li class="list">Refresh the page or restart your computer.</li>
+            <li class="list">Check your stable internet connection.</li>
+            <li class="list">Ensure security software isn't blocking Algoquant Fintech Limited.</li>
+        </ul>
+        <a class="try" href="https://growthsec.com">Go Home</a>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.spiner-container {
+    width: 100%;
+    display: flex !important;;
+    justify-content: center;
+    place-items: center;
+
+}
+
+.spiner-container
+img.growth_logo {
+    width: 100px;
+    height: 100px;
+    display: block;
+    position: absolute;
+    top: 40%;
+    user-select: none;
+    -webkit-user-select: none !important;
+}

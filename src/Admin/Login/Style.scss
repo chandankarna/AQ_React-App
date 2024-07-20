@@ -1,0 +1,97 @@
+$main-clr: #1785b8;
+$sec-clr: #808080;
+$light-dark-clr: #434449;
+$whiteClr: #fff;
+$main-light-clr: #1785b809;
+$border-clr: #6ebbdf48;
+
+.login-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(45deg, $main-clr, $main-light-clr);
+}
+
+.login-form {
+    background-color: $whiteClr;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+    width: 100%;
+
+    h2 {
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+        color: $main-clr;
+        margin-bottom: 20px;
+    }
+
+    form {
+        .form-group {
+            label {
+                display: flex;
+                align-items: center;
+                color: $main-clr;
+                i {
+                    margin-left: 10px;
+                    font-size: 18px;
+                }
+            }
+
+            .form-control {
+                border: none;
+                border-bottom: 2px solid $main-clr;
+                border-radius: 0;
+                padding-right: 35px;
+                transition: border 0.3s;
+
+                &:focus {
+                    border-color: $main-light-clr;
+                }
+            }
+        }
+
+        .mb-3 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+
+            .form-check {
+                label {
+                    margin-bottom: 0;
+                    color: $sec-clr;
+                }
+            }
+        }
+
+        .btn {
+            background-color: $main-clr;
+            color: $whiteClr;
+            border: 1px solid $main-clr;
+            border-radius: 5px;
+            padding: 12px 30px;
+            font-weight: bold;
+            transition:
+                background-color 0.3s,
+                color 0.3s,
+                border 0.3s;
+            width: 100%;
+
+            &:hover {
+                background-color: $main-light-clr;
+                color: $main-clr;
+                border: 1px solid $main-clr;
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        .form-control {
+            border-bottom: 1px solid $main-clr;
+        }
+    }
+}

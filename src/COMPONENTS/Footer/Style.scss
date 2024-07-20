@@ -1,0 +1,13 @@
+.footer_section-container {
+    margin: 70px 0;
+    .footer_section {
+        .footer-texts {
+            text-align: center;
+
+            p.disc {
+                font-family: monospace;
+                font-size: 1.2rem;
+            }
+        }
+    }
+}

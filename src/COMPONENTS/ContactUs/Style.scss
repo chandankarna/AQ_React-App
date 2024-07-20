@@ -1,0 +1,189 @@
+// ?? Main Variables
+$main-clr: #1785b8;
+$sec-clr: #808080;
+$light-dark-clr: #434449;
+$whiteClr: #fff;
+$main-light-clr: #1785b809;
+$border-clr: #6ebbdf48;
+
+// ?? Main Mixins
+@mixin flex {
+    display: flex !important;
+    margin: auto;
+    justify-content: center !important;
+    place-items: center !important;
+}
+
+@mixin h1 {
+    padding: 1%;
+    text-align: center;
+    font-family: serif;
+}
+
+.contact_header-container {
+    margin-top: 80px;
+    background-image: linear-gradient(#0000009f, #000000a2), url(./contactpic.jpg);
+    width: 100%;
+    min-height: 940px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+
+    .heading-texts {
+        @include flex();
+        margin-top: 320px;
+
+        h1.title {
+            @include h1();
+            color: #fff;
+            font-weight: 600;
+            font-size: 4rem;
+        }
+    }
+}
+
+// *** Contact Form
+// *** Contacts ***
+.contact_section-container {
+    width: 100%;
+    margin: 100px 0;
+
+    .contact_section {
+        .contact_section-rows {
+            .contact_section-texts {
+                .contact-texts {
+                    width: 280px;
+
+                    h1.title {
+                        padding: 20px 0;
+                        color: $main-clr;
+                    }
+
+                    p.disc {
+                        a {
+                            color: #000;
+                            text-decoration: none;
+
+                            &:hover {
+                                color: $main-clr;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .contact_section-form {
+                .contact-form {
+                    form {
+                        input {
+                            margin-top: 15px;
+                            border: 1px solid $main-clr;
+                            outline: none;
+                            width: 45%;
+                            height: 40px;
+                            padding-left: 20px;
+
+                            &:nth-child(2) {
+                                margin-left: 5%;
+                            }
+
+                            &:nth-child(4) {
+                                margin-left: 5%;
+                            }
+
+                            &::placeholder {
+                                color: $main-clr;
+                            }
+
+                            &:focus {
+                                background-color: $main-light-clr;
+                                border: 1px solid $border-clr;
+                            }
+                        }
+
+                        textarea {
+                            border: 1px solid $main-clr;
+                            outline: none;
+                            margin-top: 15px;
+                            width: 95%;
+                            min-height: 150px;
+                            max-height: 200px;
+                            padding: 10px;
+
+                            &:focus {
+                                background-color: $main-light-clr;
+                            }
+                        }
+
+                        button.submit-btn {
+                            width: 95%;
+                            border: 1px solid $main-clr;
+                            outline: none;
+                            color: $main-clr;
+                            height: 40px;
+                            background: transparent;
+
+                            &:hover {
+                                transition: 0.2s ease-in-out;
+                                background-color: $main-clr;
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//   *** Success Message
+/* Define the modal overlay (background) styles */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Define the modal container styles */
+.modal-container {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transform: scale(0.7);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Define the modal title styles */
+.modal-title {
+    font-size: 24px;
+    color: $main-clr;
+    margin-bottom: 10px;
+}
+
+/* Define the modal text styles */
+.modal-text {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+/* Animation for the modal overlay and container */
+.modal-overlay.active {
+    opacity: 1;
+}
+
+.modal-container.active {
+    transform: scale(1);
+}

@@ -1,0 +1,40 @@
+.error-page {
+  display: flex;
+  justify-content: center;
+
+  .content {
+    text-align: center;
+    padding: 30px;
+
+    h1.err_title {
+      font-family: fantasy;
+      font-weight: 400;
+    }
+
+    p.disc {
+      margin-top: 3%;
+      font-family: 'Courier New', Courier, monospace;
+      color: #434449;
+      font-size: 1.2rem;
+    }
+
+    a.btn_err {
+      border: none;
+      margin-top: .1%;
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #808080;
+
+      &:hover {
+        color: #007bb5;
+      }
+
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  a.btn_err {
+    margin-bottom: 50px;
+  }
+}

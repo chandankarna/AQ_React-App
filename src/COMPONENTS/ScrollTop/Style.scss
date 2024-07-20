@@ -1,0 +1,30 @@
+// ** Color Variables
+$main-clr: #1a91c9;
+
+.scroll-to-top-button {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: $main-clr;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out; // Added transform property for animation
+    z-index: 999;
+    transform: scale(0); // Initial scale to make it invisible
+
+    i {
+        font-size: 20px;
+    }
+}
+
+.scroll-to-top-button.visible {
+    opacity: 1;
+    transform: scale(1); // Scale it up when visible
+}

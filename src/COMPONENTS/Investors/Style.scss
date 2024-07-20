@@ -1,0 +1,168 @@
+// ?? Main Variables
+$main-clr: #1785b8;
+$sec-clr: #808080;
+$light-dark-clr: #434449;
+$whiteClr: #fff;
+$main-light-clr: #1785b809;
+$border-clr: #6ebbdf48;
+
+// ?? Main Mixins
+@mixin flex {
+    display: flex !important;
+    margin: auto;
+    justify-content: center !important;
+    place-items: center !important;
+}
+
+@mixin h1 {
+    padding: 1%;
+    text-align: center;
+    font-family: serif;
+}
+
+// *** Styling Starts ***
+.invest_header-container {
+    margin-top: 80px;
+    background-image: linear-gradient(#0000009f, #000000a2), url(./investpic.jpg);
+    width: 100%;
+    min-height: 940px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+
+    .heading-texts {
+        @include flex();
+        margin-top: 320px;
+
+        h1.title {
+            @include h1();
+            color: #fff;
+            font-weight: 600;
+            font-size: 4rem;
+        }
+    }
+}
+
+// *** Datas
+.data_sectionContainer {
+    padding: 20px;
+
+    .data_section {
+        background-color: $whiteClr;
+        border-radius: 5px;
+        padding: 20px;
+
+        .datas {
+            .accordion-item {
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+                border-radius: 5px;
+                margin-bottom: 15px;
+
+                .accordion-header {
+                    color: $whiteClr;
+                    padding: 10px 15px;
+                    cursor: pointer;
+                    border: none !important;
+                    outline: none !important;
+
+                    &:active {
+                        border: none !important;
+                        outline: none !important;
+                    }
+
+                    .heading {
+                        font-size: 18px;
+                        font-weight: bold;
+                    }
+
+                    &:hover {
+                        background-color: $main-light-clr;
+                    }
+                }
+
+                .accordion-body {
+                    background-color: $whiteClr;
+                    padding: 15px;
+                    border-bottom-left-radius: 5px;
+                    border-bottom-right-radius: 5px;
+                }
+            }
+        }
+    }
+}
+
+// *** Fetched Data Sample
+.data_section-container {
+    padding: 20px;
+
+    .data_section {
+        border-radius: 5px;
+        padding: 20px;
+
+        h1 {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .datas {
+            .accordion-item {
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+                border-radius: 5px;
+                margin-bottom: 15px;
+
+                .accordion-header {
+                    color: #333;
+                    padding: 10px 15px;
+                    cursor: pointer;
+                    border: none !important;
+                    outline: none !important;
+
+                    .heading {
+                        font-size: 18px;
+                        font-weight: bold;
+                    }
+                }
+
+                .accordion-body {
+                    background: linear-gradient(90deg, #f0f0f0, #fff);
+                    padding: 20px;
+                    border-bottom-left-radius: 5px;
+                    border-bottom-right-radius: 5px;
+                    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+
+                    .dataContainer {
+                        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+                        padding: 2px 20px;
+                        border: 1px solid #eee;
+                        margin-bottom: 17px;
+
+                        p {
+                            padding-top: 18px;
+                            font-size: 18px;
+                            color: #333;
+                            line-height: 2px;
+                        }
+
+                        a {
+                            margin-bottom: 20px;
+                            display: block;
+                            font-size: 16px;
+                            color: #007bff;
+                            text-decoration: none;
+                            transition: color 0.3s;
+
+                            &:hover {
+                                color: #0056b3;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,16 @@
+[
+  {
+      "title": "Title 1",
+      "content": [
+          { "pdfName": "PDF 1", "pdfLink": "link-to-pdf-1" },
+          { "pdfName": "PDF 2", "pdfLink": "link-to-pdf-2" }
+      ]
+  },
+  {
+      "title": "Title 2",
+      "content": [
+          { "pdfName": "PDF 3", "pdfLink": "link-to-pdf-3" },
+          { "pdfName": "PDF 4", "pdfLink": "link-to-pdf-4" }
+      ]
+  }
+]

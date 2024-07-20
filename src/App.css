@@ -1,0 +1,58 @@
+/* ** Responsiveness for Mobile, Tablet, Laptop, Desktop and Large Screen ** */
+/* *** Too Small Device *** */
+@media only screen and (min-device-width : 0) and (max-device-width : 265px) {}
+
+
+
+
+
+
+
+
+
+
+/* *** Samsung Fold *** */
+@media only screen and (min-device-width : 275px) and (max-device-width : 350px) {}
+
+
+
+
+
+
+
+
+
+
+/* ******* Mobile Size ******* */
+@media only screen and (min-device-width : 360px) and (max-device-width : 640px) {
+
+    html {
+        font-size: 70%;
+        padding-left: 1%;
+        padding-right: 1%;
+        text-align: center;
+    }
+
+    p {
+        padding-left: 10%;
+        padding-right: 10%;
+        text-align: center;
+    }
+
+    .nav-bar img {
+        padding: 0 2%;
+        width: 130px;
+        overflow: hidden;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* ****** Tablet Size ******* */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation : portrait) {}

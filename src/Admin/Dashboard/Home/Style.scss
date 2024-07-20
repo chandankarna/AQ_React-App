@@ -1,0 +1,91 @@
+// Main Variables
+$main-clr: #1785b8;
+$sec-clr: #808080;
+$light-dark-clr: #434449;
+$whiteClr: #fff;
+$main-light-clr: #1785b809;
+$border-clr: #6ebbdf48;
+
+// Main Mixins
+@mixin flex {
+    display: flex !important;
+    margin: auto;
+    justify-content: center !important;
+    place-items: center !important;
+}
+
+@mixin h1 {
+    padding: 1%;
+    text-align: center;
+    font-family: serif;
+}
+
+// Dashboard styles
+.dashviewContainer {
+    margin-top: 5%;
+}
+
+.dashboard {
+    &.loading {
+        .dashboard-card {
+            background: $light-dark-clr; /* Background color for loading state */
+        }
+    }
+    
+    .dashboard-card {
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        background: var(--card-background);
+        color: var(--card-text-color);
+        transition: all .3s ease-in-out;
+        border: 1px solid $border-clr;
+        border-radius: 5px;
+        
+        &:hover {
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+            transition: all .3s ease-in-out;
+
+        }
+
+        a {
+            text-decoration: none;
+
+            .fa {
+                color: $main-clr; /* Icon color using the provided variable */
+                font-size: 2rem;
+            }
+    
+            h4 {
+                margin: 10px 0;
+                color: $main-clr;
+
+            }
+    
+            p {
+                font-size: 1.5rem;
+                font-weight: bold;
+                color: $main-clr;
+            }
+        }
+
+    }
+}
+
+
+// *** DashFooter
+.footer_sectionContainer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 40px 0;
+    .footer_section {
+        .footer-texts {
+            text-align: center;
+
+            p.disc {
+                font-family: monospace;
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
